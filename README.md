@@ -1,7 +1,7 @@
 # AI Resume Summarizer
 
 A minimal Streamlit web app that turns pasted resume text into a concise,
-professional 2–3 line summary using a free Hugging Face model.
+professional 2–3 line summary using a Hugging Face model.
 
 ## 🔗 Live Demo
 **[https://resume-summarizer.streamlit.app/](https://resume-summarizer.streamlit.app/)**
@@ -10,7 +10,8 @@ professional 2–3 line summary using a free Hugging Face model.
 Build a simple, clean web app that takes raw resume text and generates a
 concise professional summary, demonstrating practical use of the
 `huggingface_hub` package and Hugging Face Inference Providers within a
-Streamlit interface. The project is free to run (no paid API).
+Streamlit interface. The project is designed to use Hugging Face's
+available free-tier inference usage.
 
 ## What the App Does
 - Accepts resume text pasted into a large text area.
@@ -57,20 +58,19 @@ Streamlit interface. The project is free to run (no paid API).
   (see `requirements.txt`). No LangChain, database, auth, or PDF parsing.
 
 ## Screenshots
-<!-- Add screenshot files to a docs/ folder and update the paths below -->
-| Screen | Preview |
-|--------|---------|
-| App home (empty text area) | `docs/screenshot-home.png` _(placeholder)_ |
-| Generated summary | `docs/screenshot-summary.png` _(placeholder)_ |
+
+### Resume Summarization
+![Resume Summarization](docs/screenshot-summary.png)
 
 ## Hugging Face Usage
 - Create a free account at <https://huggingface.co>.
-- Generate a token at <https://huggingface.co/settings/tokens> (a **Read**
-  token is sufficient).
+- Generate a token at <https://huggingface.co/settings/tokens>. Use a
+  fine-grained token with permission to **make calls to Inference
+  Providers**.
 - The app passes this token to `InferenceClient(api_key=...)`, which routes
   the request through Hugging Face Inference Providers to the model.
-- Usage is covered by Hugging Face's free tier, so the project costs
-  nothing to run.
+- The project is designed to use Hugging Face's available free-tier
+  inference usage.
 
 ## How to Run Locally
 1. (Optional) Create and activate a virtual environment.
@@ -108,4 +108,4 @@ Streamlit interface. The project is free to run (no paid API).
 
 ## Notes
 - The API token is never stored in the source code.
-- No OpenAI dependency — uses the free Hugging Face Inference Providers.
+- No OpenAI dependency — uses Hugging Face Inference Providers.
