@@ -60,13 +60,13 @@ available free-tier inference usage.
 ## Screenshots
 
 ### Screenshot 1
-<img src="docs/Screenshot1.png" alt="Resume Summarizer Screenshot 1" width="800">
+<img src="screenshots/Screenshot1.png" alt="Resume Summarizer Screenshot 1" width="800">
 
 ### Screenshot 2
-<img src="docs/Screenshot2.png" alt="Resume Summarizer Screenshot 2" width="800">
+<img src="screenshots/Screenshot2.png" alt="Resume Summarizer Screenshot 2" width="800">
 
 ### Screenshot 3
-<img src="docs/Screenshot3.png" alt="Resume Summarizer Screenshot 3" width="800">
+<img src="screenshots/Screenshot3.png" alt="Resume Summarizer Screenshot 3" width="800">
 
 ## Hugging Face Usage
 - Create a free account at <https://huggingface.co>.
