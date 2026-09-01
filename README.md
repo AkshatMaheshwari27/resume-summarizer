@@ -106,13 +106,6 @@ Streamlit interface. The project is free to run (no paid API).
    app reads the token from `st.secrets`, so no code change is needed
    between local and deployed environments.
 
-## Sample Test Cases
-| # | Input | Expected Result |
-|---|-------|-----------------|
-| 1 | Empty text area, click **Summarize Resume** | Warning: "Please paste some resume text first." |
-| 2 | A few words only (e.g. "John, Python developer") | Warning that the text is too short (at least 50 characters required) |
-| 3 | A full realistic resume (name, education, skills, 2–3 jobs, ~1000 characters) | A clear 2–3 sentence professional summary covering background, skills, experience/projects, and strengths |
-
 ## Notes
 - The API token is never stored in the source code.
 - No OpenAI dependency — uses the free Hugging Face Inference Providers.
